@@ -10,7 +10,7 @@ const server = http.createServer((req, res) => {
   res.end(`This is microservice ${misNumber} runnung on port ${port}`);
 });
 
-server.listen(port, () => {
+server.listen(port, '0.0.0.0',() => {
   //console.log(`Server running at http://${hostname}:${port}/`);
-  console.log(`Server running at http://localhost:${port}/`);
+  console.log(`Server running at http://0.0.0:${port}/`);
 });
